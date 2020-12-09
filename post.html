@@ -85,13 +85,24 @@
 LSTMs and GRUs - variants of RNNs were capable of capturing the dependencies but it is also limited.</p>
 
           <p>So, the main inspiration behind the transformer was to get rid of this recurrence and still end up capturing almost all the dependencies, to be precise global dependencies, yes the reference window of tranformers is full-range. This was achieved using a variant of attention mechanism called self-attention (multi-headed) which is very important for their success. One other advantage of Tranformer models are that they are highly parallelizable.</p>
+<h2 class="section-heading">Transformer Architecture</h2>
+          <p>Note: The architecture diagrams are annotated with the corresponding step in the explanation.</p>
+<a href="#">
+            <img class="img-fluid" src="img/Vit/transformer-arch.png" alt="">
+          </a>
+          
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+          <span class="caption text-muted"> </span>
 
-          <h2 class="section-heading">The Final Frontier</h2>
-
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
+	<ul style="list-style-type:circle">
+         <li>Transformer has two parts, the decoder which is on the left side on the above diagram and the encoder which is on the right.</li>
+         <li>Imagine we are doing machine translation for now.</li>
+         <li>the encoder takes the input data (sentence), and produces an intermediate representation of the input.</li>
+		  <li>The decoder decodes this intermediate representation step by step and generates the output. The difference however is in how it is doing this.</li>
+		   <li>Understanding the Encoder section is enough for ViT.</li>
+      </ul>
+	  <span class="caption text-muted">Note: The explanations here are more about the intuition behind the architectures. For more mathematical details check out the respective research papers instead. </span>
+<h2 class="section-heading">The Final Frontier</h2>
           <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
 
           <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
