@@ -80,9 +80,11 @@
 		  <h2 class="section-heading">Transformers: A brief overview</h2>
           <p>Transformer models well and truly revolutionized Natural Language Processing as we know. When they were first introduced they broke multiple NLP records and were pushing the then State of the Art. Now, they have become a de-facto standard for modern NLP tasks and they bring spectacular performance gains when compared to the previous generation of models like LSTMs and GRUs. By far the most important paper that transformed the NLP landscape is the <a href="https://arxiv.org/pdf/2010.11929.pdf">"Attention is all you need"</a> paper. The transformer architecture was introduced in this paper.</p>
 <h2 class="section-heading">Motivations:</h2>
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+          <p>The existing models at that time for sequence and NLP tasks mostly involved RNNs. The problem with these networks were that they couldn't capture long term dependencies.
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+LSTMs and GRUs - variants of RNNs were capable of capturing the dependencies but it is also limited.</p>
+
+          <p>So, the main inspiration behind the transformer was to get rid of this recurrence and still end up capturing almost all the dependencies, to be precise global dependencies, yes the reference window of tranformers is full-range. This was achieved using a variant of attention mechanism called self-attention (multi-headed) which is very important for their success. One other advantage of Tranformer models are that they are highly parallelizable.</p>
 
           <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
 
