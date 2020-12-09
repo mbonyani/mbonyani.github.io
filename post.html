@@ -102,8 +102,10 @@ LSTMs and GRUs - variants of RNNs were capable of capturing the dependencies but
 		   <li>Understanding the Encoder section is enough for ViT.</li>
       </ul>
 	  <span class="caption text-muted">Note: The explanations here are more about the intuition behind the architectures. For more mathematical details check out the respective research papers instead. </span>
-<h2 class="section-heading">The Final Frontier</h2>
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h2 class="section-heading">Tranformers: Step by step overview</h2>
+          <p>(1) The input data first gets embedded into a vector. The embedding layer helps us grab a learned vector representation for each word.<br>
+		  (2) In the next stage a positional encoding is injected into the input embeddings. This is because a transformer has no idea about the order of the sequence that is being passed as input - for example a sentence.<br>
+		  (3) Now the multi-headed attention is where things get a little different.</p>
 
           <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
 
